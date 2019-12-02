@@ -12,8 +12,9 @@ import formatDate from 'utils/formatDate';
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
 Vue.use(formcheck)
-// Vue.use(layout)
+Vue.use(layout)
 Vue.use(errorCode)
+import 'mint-ui/lib/style.css'
 import 'swiper/dist/css/swiper.css'
 import "css/reset.css";
 import "css/base.less";

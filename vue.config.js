@@ -44,10 +44,10 @@ module.exports = {
 	// 		postcss: {
 	// 			plugins: [
 	// 				require('postcss-px2rem')({
-	// 					rootValue: 20, // 换算的基数
+	// 					rootValue: 12, // 换算的基数
 	// 					selectorBlackList: [], // 忽略转换正则匹配项
 	// 					propList: ['*'],
-	// 					minPixelValue: 2
+	// 					minPixelValue: 1
 	// 				}),
 	// 			]
 	// 		}

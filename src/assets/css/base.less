@@ -1,0 +1,613 @@
+@media (min-width: 320px) {
+	html {
+		font-size: 50%;
+	}
+}
+@media (min-width: 360px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+@media (min-width: 384px) {
+	html {
+		font-size: 75%;
+	}
+}
+@media (min-width: 400px) {
+	html {
+		font-size: 87.5%;
+	}
+}
+@media (min-width: 540px) {
+	html {
+		font-size: 100%;
+	}
+}
+@media (min-width: 600px) {
+	html {
+		font-size: 112.5%;
+	}
+}
+@media (min-width: 640px) {
+	html {
+		font-size: 125%;
+	}
+}
+@media (min-width: 720px) {
+	html {
+		font-size: 137.5%;
+	}
+}
+@media (min-width: 768px) {
+	html {
+		font-size: 162.5%;
+	}
+}
+
+html {
+	font-size: calc(100vw / 375 * 10);
+}
+@media (min-width: 750px) {
+	html {
+		font-size: 137.5%;
+	}
+}
+html,
+body,
+p,
+ul,
+ol,
+li,
+form,
+th,
+td,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+title,
+dl,
+dt,
+dd {
+	margin: 0;
+	padding: 0;
+}
+html,
+body,
+p,
+div,
+span,
+button,
+a,
+ul,
+ol,
+li,
+form,
+th,
+td,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+title,
+dl,
+dt,
+dd {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+li,
+dt,
+dd {
+	list-style: none;
+}
+html,
+body {
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+body {
+	font-size: 1.2rem;
+	color: #000;
+	font-family: Microsoft YaHei, arial, tahoma, '\5fae\8f6f\96c5\9ed1', 'Hiragino Sans GB', sans-serif !important;
+	
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1.2rem;
+}
+img {
+	border: none;
+	font-size: 0;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	color: #555;
+}
+table {
+	border-collapse: collapse;
+}
+input,
+textarea {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: 0;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'PingFang SC', Microsoft YaHei, arial, tahoma, '\5fae\8f6f\96c5\9ed1', 'Hiragino Sans GB', sans-serif !important;
+}
+input.on {
+	border-color: #ff6400;
+}
+textarea {
+	resize: none;
+	overflow: auto;
+}
+button{
+	border: 0;
+	background: none;
+	outline: none;
+}
+input[type='radio'],
+input[type='checkbox'] {
+	box-shadow: none;
+	border: none;
+}
+select {
+	line-height: 1.8;
+	border: none;
+	border: 1px solid #bbb;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	/* Firefox */
+	-webkit-box-sizing: border-box;
+	/* Safari */
+	box-sizing: border-box;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'PingFang SC', Microsoft YaHei, arial, tahoma, '\5fae\8f6f\96c5\9ed1', 'Hiragino Sans GB', sans-serif !important;
+}
+input:disabled {
+	-webkit-opacity: 1 !important;
+	opacity: 1 !important;
+	-webkit-text-fill-color: #333;
+}
+/*****************************
+辅助类样式
+*****************************/
+.clear:after {
+	content: '';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.con {
+	margin: 0 auto;
+	width: 94%;
+}
+.text-r {
+	text-align: right;
+}
+.text-l {
+	text-align: left;
+}
+.text-c {
+	text-align: center;
+}
+.bg-b {
+	background-color: #333333;
+	width: 100%;
+}
+.bg-w {
+	background-color: white;
+	width: 100%;
+}
+.bg-g {
+	background-color: #f8f8f8;
+	width: 100%;
+}
+.border {
+	border: 1px solid #ddd;
+}
+.hide {
+	display: none;
+}
+.fw700{
+	font-weight: 700;
+}
+.fw600{
+	font-weight: 600;
+}
+.fw500{
+	font-weight: 500;
+}
+.fw400{
+	font-weight: 400;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.edit_textBox {
+	text-indent: 2em;
+	word-break: break-all;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	* {
+		font-size: inherit;
+		max-width: 100% !important;
+	}
+	td,
+	th {
+		border: 1px solid #000;
+	}
+	a {
+		color: #7030a0;
+		text-decoration: underline;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 2;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 18.72px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	h5 {
+		font-size: 13.28px;
+	}
+	h6 {
+		font-size: 12px;
+	}
+	img {
+		display: inline-block;
+		height: auto;
+		vertical-align: top;
+		width: auto;
+	}
+	p {
+		overflow: hidden;
+	}
+}
+/*****************************
+错误提示样式
+*****************************/
+.name-error,
+.username-error,
+.phone-error,
+.phone_code-error,
+.email-error,
+.password-error,
+.password_null-error,
+.password_alike-error,
+.ID-error,
+.name-true,
+.ID-true,
+.phone-true,
+.phone_code-true,
+.email-true,
+.password-true,
+.password_null-true,
+.password_alike-true {
+	display: none;
+}
+.error span {
+	color: red;
+	display: none;
+	font-size: 12px;
+}
+/*****************************
+验证码按钮事件css类
+*****************************/
+.M_verification-code {
+	display: inline-block;
+	color: #ec773a;
+	line-height: 2.5rem;
+	text-align: center;
+	border-radius: 0.2rem;
+	padding: 0.2rem;
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+.M_verification-code.on {
+	background-color: #cccccc;
+	color: #a0a0a0;
+}
+/*****************************
+layer弹窗样式
+*****************************/
+
+.v-modal {
+	z-index: 10000 !important;
+}
+
+.mint-datetime {
+	z-index: 10001 !important;
+}
+
+.mint-msgbox {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 78%;
+}
+
+.mint-msgbox-wrapper,
+.mint-toast {
+	z-index: 100000 !important;
+}
+
+.mint-msgbox-header {
+	padding-top: 2.42rem;
+}
+
+.mint-msgbox-content {
+	padding: 2.67rem 1.5rem 2rem 1.5rem;
+}
+
+.mint-msgbox-message {
+	color: #353535;
+	font-size: 1.42rem;
+	line-height: 2rem;
+	.span {
+		color: #8f2a2b;
+	}
+}
+
+.mint-msgbox-btn {
+	color: #353535;
+	font-size: 1.42rem;
+	line-height: 3.83rem;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.mint-msgbox-confirm {
+	color: #005dd7;
+}
+
+.mint-msgbox-cancel {
+	border-right: none;
+	&:after {
+		background-color: #ddd;
+		content: '';
+		margin: auto;
+		position: absolute;
+		z-index: 100;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		height: 2.83rem;
+	}
+}
+
+.mint-msgbox-title {
+	color: #353535;
+	font-size: 1.42rem;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.mint-indicator-mask {
+	z-index: 10000;
+}
+
+.mint-msgbox-btns {
+	height: 3.83rem;
+	line-height: 3.83rem;
+}
+
+.mint-indicator-wrapper {
+	z-index: 100000;
+}
+.clearfix {
+	zoom: 1;
+	&:before {
+		content: '';
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+}
+.text-r {
+	text-align: right;
+}
+
+.text-l {
+	text-align: left;
+}
+
+.text-c {
+	text-align: center;
+}
+
+.border {
+	border: 1px solid #ddd;
+}
+
+.hide {
+	display: none;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.flex {
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+/* 宽度随屏幕改变变化 */
+.flex-1 {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+/* 垂直水平居中 */
+.flex-center {
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	-webkit-align-items: center;
+}
+
+.flex-start {
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+}
+
+/* 水平居中 */
+.flex-align-center {
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+/* 垂直居中 */
+.flex-ver {
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.flex-end {
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+}
+
+/* flex-direction垂直方向 */
+.flex-col {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+/* flex 换行 */
+.flex-wrap {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+/* flex 容器（设置为flex）内子元素向两边顶齐平分 */
+.flex-jcsb {
+	justify-content: space-between;
+}
+
+/* 容器（设置为flex）内子元素靠最后对齐（水平时比较像右浮动） */
+.flex-jcfe {
+	justify-content: flex-end;
+}
+
+/* 容器（设置为flex）内子元素靠最前对齐（水平时比较像左浮动） */
+.flex-jcfs {
+	justify-content: flex-start;
+}
+
+/* 容器（设置为flex）内子元素等高 */
+.flex-ais {
+	align-items: stretch;
+}
+
+/* 容器（设置为flex）内子元素置底 */
+.flex-aife {
+	align-items: flex-end;
+}
+/*移动端应该不需要考虑*/
+/*火狐浏览器的placeholder默认opacity0.4*/
+input:-moz-placeholder,
+input::-moz-placeholder {
+	opacity: 1;
+}
+.placeholer-class {
+	&::-webkit-input-placeholder {
+		color: #ccc;
+	}
+
+	/* 使用webkit内核的浏览器 */
+	&:-moz-placeholder {
+		color: #ccc;
+	}
+
+	/* Firefox版本4-18 */
+	&::-moz-placeholder {
+		color: #ccc;
+	}
+	/* Firefox版本19+ */
+	&:-ms-input-placeholder {
+		color: #ccc;
+	}
+}

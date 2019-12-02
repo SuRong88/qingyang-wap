@@ -1,14 +1,19 @@
 <template>
-  <div class="index">
-  </div>
+	<div class="index">
+		<ul class="menu flex flex-align-center">
+			<router-link class="menu-item" tag="li" to="/me/index"></router-link>
+			<router-link class="menu-item" tag="li" to="/me/index"></router-link>
+			<router-link class="menu-item" tag="li" to="/me/index"></router-link>
+		</ul>
+	</div>
 </template>
 
 <script>
 export default {
-	components: {},
-	created() {},
+	created() {
+		console.log(window.$API);
+	},
 	mounted() {},
-	props: {},
 	data() {
 		return {};
 	},

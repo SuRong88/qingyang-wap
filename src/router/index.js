@@ -21,7 +21,241 @@ const routes = [{
 		path: "/",
 		name: "Home",
 		component: resolve => require(['@/pages/Home.vue'], resolve),
-		children: []
+		children: [{
+				name: 'Login',
+				path: 'login',
+				meta: {
+					title: '登录'
+				},
+				component: resolve => require(['pages/Login.vue'], resolve)
+			}, {
+				name: 'Register',
+				path: 'register',
+				meta: {
+					title: '注册'
+				},
+				component: resolve => require(['pages/Register.vue'], resolve)
+			}, {
+				name: 'Setting',
+				path: 'setting',
+				meta: {
+					title: '设置密码'
+				},
+				component: resolve => require(['pages/Setting.vue'], resolve)
+			},
+			{
+				name: 'Forget',
+				path: 'forget',
+				meta: {
+					title: '忘记密码'
+				},
+				component: resolve => require(['pages/Forget.vue'], resolve)
+			},
+			{
+				name: 'Edit',
+				path: 'edit',
+				meta: {
+					title: '修改密码'
+				},
+				component: resolve => require(['pages/Edit.vue'], resolve)
+			},
+			{
+				name: 'Detail',
+				path: 'detail/:type/:id',
+				meta: {
+					title: '通用详情页'
+				},
+				component: resolve => require(['pages/Detail.vue'], resolve)
+			},
+
+			{
+				name: 'HotelReservation',
+				path: 'hotelReservation',
+				meta: {
+					title: '酒店预订'
+				},
+				component: resolve => require(['pages/HotelsReservation.vue'], resolve)
+			},
+
+			{
+				name: 'SpotReservation',
+				path: 'spotReservation',
+				meta: {
+					title: '景点预订'
+				},
+				component: resolve => require(['pages/SpotsReservation.vue'], resolve)
+			},
+			{
+				name: 'RentalReservation',
+				path: 'rentalReservation',
+				meta: {
+					title: '租车预订'
+				},
+				component: resolve => require(['pages/RentalsReservation.vue'], resolve)
+			},
+			{
+				name: 'LineReservation',
+				path: 'lineReservation',
+				meta: {
+					title: '路线预订'
+				},
+				component: resolve => require(['pages/LinesReservation.vue'], resolve)
+			},
+			{
+				name: 'Me',
+				path: 'me',
+				component: resolve => require(['pages/me/Me.vue'], resolve),
+				children: [{
+						name: 'MeIndex',
+						path: 'index',
+						meta: {
+							title: '个人中心'
+						},
+						component: resolve => require(['pages/me/Index.vue'], resolve)
+					},
+					{
+						name: 'MeInformation',
+						path: 'information',
+						meta: {
+							title: '个人信息'
+						},
+						component: resolve => require(['pages/me/Information.vue'], resolve)
+					},
+					{
+						name: 'MeOrder',
+						path: 'order/:type',
+						meta: {
+							title: '我的订单'
+						},
+						component: resolve => require(['pages/me/Order.vue'], resolve)
+					},
+					{
+						name: 'MeOrderDetail',
+						path: 'detail/:type/:id',
+						meta: {
+							title: '订单详情'
+						},
+						component: resolve => require(['pages/me/Detail.vue'], resolve)
+					}
+				]
+			},
+			{
+				path:'/me',
+				redirect:'/me/index'
+			},
+			{
+				path:'/me/order',
+				redirect:'/me/order/all'
+			},
+			{
+				path:'/me/detail/*',
+				redirect:'/me/detail/hotel/0'
+			},
+			{
+				name: 'Hotel',
+				path: 'hotel',
+				meta: {
+					title: '精品酒店'
+				},
+				component: resolve => require(['pages/Hotel.vue'], resolve)
+			},
+			{
+				name: 'HotelDetail',
+				path: 'hotelDetail/:id',
+				meta: {
+					title: '酒店详情'
+				},
+				component: resolve => require(['pages/HotelDetail.vue'], resolve)
+			},
+			{
+				name: 'Place',
+				path: 'place',
+				meta: {
+					title: '景点'
+				},
+				component: resolve => require(['pages/Place.vue'], resolve)
+			},
+			{
+				name: 'PlaceDetail',
+				path: 'placeDetail/:id',
+				meta: {
+					title: '景点详情'
+				},
+				component: resolve => require(['pages/PlaceDetail.vue'], resolve)
+			},
+			{
+				name: 'Route',
+				path: 'route',
+				meta: {
+					title: '线路'
+				},
+				component: resolve => require(['pages/Route.vue'], resolve)
+			},
+			{
+				name: 'RouteDetail',
+				path: 'routeDetail/:id',
+				meta: {
+					title: '线路详情'
+				},
+				component: resolve => require(['pages/RouteDetail.vue'], resolve)
+			},
+			{
+				name: 'Car',
+				path: 'car',
+				meta: {
+					title: '租车'
+				},
+				component: resolve => require(['pages/Car.vue'], resolve)
+			},
+			{
+				name: 'CarDetail',
+				path: 'carDetail/:id',
+				meta: {
+					title: '租车详情'
+				},
+				component: resolve => require(['pages/CarDetail.vue'], resolve)
+			},
+			{
+				name: 'Pay',
+				path: 'pay/:id',
+				meta: {
+					title: '支付'
+				},
+				component: resolve => require(['pages/Pay.vue'], resolve)
+			},
+			{
+				name: 'PaySuccess',
+				path: 'paySuccess',
+				meta: {
+					title: '支付成功'
+				},
+				component: resolve => require(['pages/PaySuccess.vue'], resolve)
+			},
+			{
+				name: 'PayError',
+				path: 'PayError',
+				meta: {
+					title: '支付失败'
+				},
+				component: resolve => require(['pages/PayError.vue'], resolve)
+			},
+			{
+				name: 'Guideline',
+				path: 'guideline',
+				meta: {
+					title: '旅游攻略'
+				},
+				component: resolve => require(['pages/Guideline.vue'], resolve)
+			},
+			{
+				name: 'GuidelineDetail',
+				path: 'guidelineDetail/:id',
+				meta: {
+					title: '旅游攻略详情'
+				},
+				component: resolve => require(['pages/GuidelineDetail.vue'], resolve)
+			}
+		]
 	},
 	{
 		name: 'error',
@@ -31,10 +265,10 @@ const routes = [{
 		},
 		component: resolve => require(['pages/404.vue'], resolve)
 	},
-	{
-		path: '*',
-		redirect: '/404'
-	}
+	// {
+	// 	path: '*',
+	// 	redirect: '/404'
+	// }
 ];
 const router = new VueRouter({
 	mode: 'history',
@@ -42,7 +276,7 @@ const router = new VueRouter({
 	routes
 });
 router.beforeEach((to, from, next) => {
-	window.document.title = to.meta.title || '清扬会务'
+	// window.document.title = to.meta.title || '清扬会务'
 	next()
 });
 router.afterEach((to, from) => {
